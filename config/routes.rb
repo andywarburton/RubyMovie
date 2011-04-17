@@ -1,4 +1,6 @@
 RubyMovie::Application.routes.draw do
+  resources :genres
+
   resources :films
 
   # The priority is based upon order of creation:

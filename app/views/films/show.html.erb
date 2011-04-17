@@ -7,7 +7,7 @@
 
 <p>
   <b>Url:</b>
-  <%= @film.url %>
+  <%= link_to @film.url, @film.url %>
 </p>
 
 <p>
@@ -15,6 +15,10 @@
   <%= @film.rating %>
 </p>
 
+<p>
+  <b>Genre:</b>
+  <%= @film.genre.title if @film.genre %>
+</p>
 
 <%= link_to 'Edit', edit_film_path(@film) %> |
 <%= link_to 'Back', films_path %>

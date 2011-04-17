@@ -1,6 +1,9 @@
 class Film < ActiveRecord::Base
   validates_presence_of :title, :url  
   validates_numericality_of :rating, :greater_than => 0, :less_than => 11
+  
+  belongs_to :genre
+  
 end
 
 # == Schema Information
