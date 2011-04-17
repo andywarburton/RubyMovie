@@ -1,4 +1,6 @@
 RubyMovie::Application.routes.draw do
+  resources :films
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
