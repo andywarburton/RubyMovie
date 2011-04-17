@@ -1,4 +1,6 @@
 RubyMovie::Application.routes.draw do
+  devise_for :users
+
   resources :genres
 
   resources :films
